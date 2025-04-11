@@ -65,12 +65,7 @@
             android:orientation="horizontal"
             android:background="@drawable/headers_items_selected">
 
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/go_back"
-                android:layout_marginTop="3dp"
-                android:layout_marginStart="10dp"/>
+
 
             <TextView
                 android:id="@+id/tabCategories"
@@ -175,17 +170,19 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="16dp"/>
 
-            <!-- Item Title -->
-            <TextView
+            <EditText
                 android:id="@+id/itemTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Some Item 1"
+                android:hint="Enter product name"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:gravity="center"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext_with_corners"
+                android:padding="8dp"/>
+
 
             <!-- Description Input -->
             <EditText
@@ -214,7 +211,7 @@
                     android:layout_height="28dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_edittext_with_corners"
-                    android:text="ID"
+                    android:hint="ID"
                     android:padding="5dp"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -228,7 +225,7 @@
                     android:layout_height="28dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_edittext_with_corners"
-                    android:text="STOCK"
+                    android:hint="Stock"
                     android:textStyle="bold"
                     android:textSize="12sp"
                     android:padding="5dp"
@@ -247,7 +244,7 @@
                     android:layout_height="28dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_edittext_with_corners"
-                    android:text="Discount"
+                    android:hint="Discount"
                     android:textStyle="bold"
                     android:textSize="12sp"
                     android:padding="5dp"
@@ -261,7 +258,7 @@
                     android:layout_height="28dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_edittext_with_corners"
-                    android:text="Price"
+                    android:hint="Price"
                     android:textStyle="bold"
                     android:textSize="12sp"
                     android:padding="5dp"
